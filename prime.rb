@@ -1,13 +1,13 @@
 # Add  code here!
-def prime?(integer)
-  start = 2 
-  if number > 1 
-    range = (start..number=1).to_a
-    range.none? do |num_to_test|
-      
-      number % num_to_test == 0 
+def prime?(value)
+  if value <= 1 || value == 0 || value == 1
+    return false
+  elsif
+    (2..value - 1).each do |i|
+      if value % i == 0
+        return false
+      end
     end
-  else
-    false
   end
+  true  # <= need explanation
 end
